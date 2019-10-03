@@ -32,5 +32,32 @@ public class Main {
                 System.out.println("switchValue was neither 1, 2, 3, 4 nor 5");
                 break;
         }
+
+        char switchChar = 'E';
+        switch (switchChar) {
+            case 'A':
+                System.out.println("switchChar is A");
+                break;
+            case 'B':
+                System.out.println("switchChar is B");
+                break;
+            case 'C': case 'D': case 'E':
+                System.out.println("switchChar is " + switchChar);
+                break;
+            default:
+                System.out.println("not found");
+        }
+
+        String month = "JUNE";
+        switch (month.toLowerCase()) {
+            case "january":
+                System.out.println("Jan");
+                break;
+            case "june":
+                System.out.println("Jun");
+                break;
+            default:
+                System.out.println("Not sure");
+        }
     }
 }
